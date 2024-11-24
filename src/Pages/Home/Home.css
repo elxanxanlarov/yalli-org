@@ -1,0 +1,203 @@
+.home .hero {
+    height: 95vh;
+    background-color: var(--bg-grey);
+    position: relative;
+    z-index: 1;
+}
+
+.home .hero .buta-left {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 23rem;
+}
+
+.home .hero .buta-right {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+
+}
+
+.home .hero .text-con {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.home .hero .text-con h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.home .hero .text-con p {
+    color: var(--text-grey);
+    font-size: 1.4rem;
+}
+
+.home .hero .country-con {
+    padding: 5rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: var(--orange);
+    margin: 0 5rem;
+    margin-top: 5rem;
+}
+
+.home .hero .country-con h4 {
+    text-align: center;
+    color: var(--white);
+}
+
+.home .hero .country-con .country-search {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.home .hero .country-con .country-search .search-input {
+    background-color: var(--white);
+    padding: 1rem;
+    padding-top: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.home .hero .country-con .country-search .search-input .info-text {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    user-select: none;
+    animation: fadeInOut 10s infinite;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    40%,
+    60% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    80%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.home .hero .country-con .country-search .search-input .world-icon {
+    color: var(--text-grey);
+    font-size: 1.5rem;
+}
+
+.home .hero .country-con .country-search .search-input input {
+    width: 100% !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: .5rem;
+}
+
+.home .hero .country-con .search-dropDown {
+    height: 10rem;
+    overflow-y: auto;
+    position: absolute;
+    top: 2rem;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.home .hero .country-con .search-dropDown p {
+    padding-left: .5rem !important;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: .4rem 0 !important;
+}
+
+.home .hero .country-con .search-dropDown p:hover {
+    background-color: var(--bg-grey);
+}
+
+
+
+
+@media (max-width:1186px) {
+    .home .hero .text-con {
+        width: 80%;
+    }
+
+    .home .hero .country-con .country-search {
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+    .home .hero .text-con {
+        width: 100%;
+    }
+
+    .home .hero .country-con .country-search {
+        width: 100%;
+    }
+
+    .home .hero .container {
+        padding: 0;
+    }
+
+    .home .hero .country-con {
+        width: 100%;
+        margin: 4rem auto;
+        padding: .4rem .5rem;
+
+    }
+
+    .home .hero .country-con .country-search,
+    .home .hero .country-con .country-search .search-input {
+        width: 100% !important;
+    }
+
+    .home .hero .country-con .country-search .search-input .info-text {
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width:450px) {
+    .home .hero .country-con .country-search .search-input .info-text {
+        font-size: .7rem;
+    }
+
+    .home .hero .buta-left {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 10rem;
+    }
+
+    .home .hero .buta-right {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        width: 16rem;
+    }
+}

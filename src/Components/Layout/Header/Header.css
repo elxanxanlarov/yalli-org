@@ -1,0 +1,80 @@
+.header {
+    background-color: var(--white);
+}
+
+.header .links ul {
+    gap: 2rem;
+}
+
+.header .links ul .link {
+    color: var(--text-grey);
+    font-size: 1.1rem;
+}
+
+.header .links ul .link.active {
+    color: var(--orange);
+}
+
+.header .right {
+    display: flex;
+    gap: .5rem;
+}
+
+.header .right-btns button {
+    background-color: transparent;
+    border: none;
+}
+
+.header .right-btns {
+    gap: 1rem;
+}
+
+.header .right-btns .login-btn {
+    color: var(--text-grey);
+    font-size: 1.1rem;
+}
+
+.header .right-btns .singUp-btn {
+    background-color: var(--orange);
+    padding: .4rem 1rem;
+    color: var(--white);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
+.header .right .menu-icon {
+    font-size: 2.4rem;
+}
+
+.header .right .profile-icon {
+    font-size: 1.7rem;
+}
+
+/*  Menu Side */
+
+.header-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--white);
+    width: 17rem;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 10000;
+    transition: all .5s;
+}
+.header-menu.active {
+    transform: translateX(0);
+}
+
+.header-menu .menu-con {
+    position: relative;
+}
+
+.header-menu .menu-con .close-btn{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
